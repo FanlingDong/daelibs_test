@@ -30,6 +30,10 @@ This will create a folder call 'daelibs-interview', then you will need to activa
 ```
 daelibs-interview\Scripts\activate.bat
 ```
+for MacOs, run:
+```
+source daelibs-interview/bin/activate
+```
 
 The virtual environment will be activated and you’ll see "daelibs-interview" next to the command prompt to designate that
 
