@@ -18,7 +18,6 @@ def day_of_week_average_count(request):
     print('start_date', start_date)
     print('end_date', end_date)
 
-    # sensor_data = SensorEvent.objects.filter(event_datetime__date__range=(start_date, end_date))
     results = []
 
     for sensor_id in range(1, 11):
@@ -27,9 +26,9 @@ def day_of_week_average_count(request):
             event_datetime__date__range=(start_date, end_date),
             sensor_id=sensor_id
         ).annotate(
-            weekday=ExtractWeekDay('event_datetime')  # 提取工作日
+            weekday=ExtractWeekDay('event_datetime')  # get work days
         ).values('weekday').annotate(
-            count=Count('id')  # 计算每个工作日的事件数
+            count=Count('id')
         )
         for event in sensor_events:
             weekday = event['weekday']
