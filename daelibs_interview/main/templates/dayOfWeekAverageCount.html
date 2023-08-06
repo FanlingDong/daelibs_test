@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h1>Average Count</h1>
+<form method="post" action="/day_of_week_average_count/">
+    {% csrf_token %}
+    <label>
+        <input type="date" name="start_day" placeholder="start day"/>
+    </label>
+    <label>
+        <input type="date" name="end_day" placeholder="end day"/>
+    </label>
+    <input type="submit" value="Submit"/>
+</form>
+</body>
+</html>

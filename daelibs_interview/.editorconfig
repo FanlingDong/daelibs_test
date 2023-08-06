@@ -1,0 +1,38 @@
+# EditorConfig: https://EditorConfig.org
+
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Set default charset
+[*.{js,html,css,py,sql}]
+charset = utf-8
+
+# Python settings
+[*.py]
+indent_style = space
+indent_size = 4
+
+# JS settings
+[*.js]
+indent_style = space
+indent_size = 2
+
+# HTML settings
+[*.html]
+indent_style = space
+indent_size = 2
+
+# CSS settings
+[*.css]
+indent_style = space
+indent_size = 2
+
+# SQL settings
+[*.sql]
+indent_style = space
+indent_size = 4
